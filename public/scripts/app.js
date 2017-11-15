@@ -11,8 +11,8 @@ connector.config(function ($stateProvider, $urlRouterProvider, $locationProvider
                     controller: 'HeaderController'
                 },
                 'content': {
-                    templateUrl: '/views/gotoHomePage.html'
-                    /*controller: 'MainController'*/
+                    templateUrl: '/views/homepage.html',
+                    controller: 'MainController'
                 },
                 'footer': {
                     templateUrl: '/views/footer.html',
@@ -21,7 +21,7 @@ connector.config(function ($stateProvider, $urlRouterProvider, $locationProvider
             }
         })
 
-        /*.state('app.about',{
+        .state('app.about',{
             url:'about',
             views: {
                 'content@': {
@@ -87,26 +87,6 @@ connector.config(function ($stateProvider, $urlRouterProvider, $locationProvider
                 'content@': {
                     templateUrl: '/views/disclaimer.html',
                     controller: 'DisclaimerController'
-                }
-            }
-        })*/
-
-        .state('app.customerlogin',{
-            url:'customer/login',
-            views: {
-                'content@': {
-                    templateUrl: '/views/gotoHomePage.html',
-                    controller: 'CustomerLogin'
-                }
-            }
-        })
-
-        .state('app.customersignup',{
-            url:'customer/signup',
-            views: {
-                'content@': {
-                    templateUrl: '/views/gotoHomePage.html',
-                    controller: 'CustomerSignup'
                 }
             }
         })
@@ -201,32 +181,12 @@ connector.config(function ($stateProvider, $urlRouterProvider, $locationProvider
             }
         })
 
-        /*.state('app.expertintro',{
+        .state('app.expertintro',{
             url:'expert-introduction',
             views: {
                 'content@': {
                     templateUrl: '/views/expertIntroduction.html',
                     controller: 'ExpertIntroController'
-                }
-            }
-        })*/
-
-        .state('app.expertlogin',{
-            url:'expert/login',
-            views: {
-                'content@': {
-                    templateUrl: '/views/gotoHomePage.html',
-                    controller: 'ExpertLogin'
-                }
-            }
-        })
-
-        .state('app.expertsignup',{
-            url:'expert/signup',
-            views: {
-                'content@': {
-                    templateUrl: '/views/gotoHomePage.html',
-                    controller: 'ExpertSignup'
                 }
             }
         })

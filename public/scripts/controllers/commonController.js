@@ -211,7 +211,7 @@ connector.controller('CustomerConfirmedController', ['$http', '$scope', '$stateP
 
 }]);
 
-connector.controller('LogoutConfirm', ['$http', '$scope', '$stateParams', '$state', '$rootScope', '$window', function ($http, $scope, $stateParams, $state, $rootScope, $window) {
+connector.controller('LogoutConfirm', ['$http', '$scope', '$stateParams', '$state', '$rootScope', function ($http, $scope, $stateParams, $state, $rootScope) {
     $rootScope.selectedMenu = 0;
     $('.cookie.nag')
         .nag('hide')
@@ -228,8 +228,7 @@ connector.controller('LogoutConfirm', ['$http', '$scope', '$stateParams', '$stat
         $('.ui.basic.modal.logout-modal')
             .modal('hide')
         ;
-        /*$state.go('app');*/
-        $window.location.href = 'https://www.connector.expert';
+        $state.go('app');
     };
 
     $scope.back = function () {
@@ -533,46 +532,4 @@ connector.controller('ExpertResetPasswordConfirmation', ['$http', '$scope', '$st
         ModalService.openExpertLoginModal();
     };
 
-}]);
-
-connector.controller('CustomerLogin', ['$http', '$scope', '$stateParams', '$state', '$rootScope', 'ModalService', function ($http, $scope, $stateParams, $state, $rootScope, ModalService) {
-    ModalService.openLoginModal()
-}]);
-
-connector.controller('CustomerSignup', ['$http', '$scope', '$stateParams', '$state', '$rootScope', 'ModalService', function ($http, $scope, $stateParams, $state, $rootScope, ModalService) {
-    ModalService.openSignupModal();
-    $('#datepicker').calendar({
-        type: 'date',
-        formatter: {
-            date: function (date, settings) {
-                if (!date) return '';
-                var day = ("0" + date.getDate()).slice(-2);
-                var month = ("0" + (date.getMonth() + 1)).slice(-2);
-                var year = date.getFullYear();
-                return day + '/' + month + '/' + year;
-            }
-        },
-        maxDate: new Date()
-    });
-}]);
-
-connector.controller('ExpertLogin', ['$http', '$scope', '$stateParams', '$state', '$rootScope', 'ModalService', function ($http, $scope, $stateParams, $state, $rootScope, ModalService) {
-    ModalService.openExpertLoginModal()
-}]);
-
-connector.controller('ExpertSignup', ['$http', '$scope', '$stateParams', '$state', '$rootScope', 'ModalService', function ($http, $scope, $stateParams, $state, $rootScope, ModalService) {
-    ModalService.openExpertSignupModal();
-    $('#datepicker-expert').calendar({
-        type: 'date',
-        formatter: {
-            date: function (date, settings) {
-                if (!date) return '';
-                var day = ("0" + date.getDate()).slice(-2);
-                var month = ("0" + (date.getMonth() + 1)).slice(-2);
-                var year = date.getFullYear();
-                return day + '/' + month + '/' + year;
-            }
-        },
-        maxDate: new Date()
-    });
 }]);

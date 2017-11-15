@@ -1,9 +1,9 @@
 <div class="ui inverted borderless secondary pointing stackable menu main-header">
     <div class="offset-item"></div>
-    <a class="item" href="https://www.connector.expert">
+    <a class="item" ui-sref="app">
         <img class="connector-logo-header" src="../images/connector-logo-black.png">
     </a>
-    <!--<a class="right item black-bottom text-center" ui-sref="app.about" ng-class="{'active': $root.selectedMenu==2}">
+    <a class="right item black-bottom text-center" ui-sref="app.about" ng-class="{'active': $root.selectedMenu==2}">
         <span class="header-options source-sans font-size-16">
         About
         </span>
@@ -27,10 +27,8 @@
         <span class="header-options source-sans font-size-16">
         Who are our experts
         </span>
-    </a>-->
-    <a class="right item">
-
     </a>
+
     <div class="ui label header-avatar" ng-mouseover="showDropdown()" ng-show="$root.user">
         <img class="ui right spaced avatar image header-avatar-image" src="{{$root.profilePictureLink}}">
         <span>{{$root.user.firstname}}</span>
