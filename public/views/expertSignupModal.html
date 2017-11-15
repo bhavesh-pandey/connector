@@ -1,0 +1,349 @@
+<div class="ui basic modal expert-signup-modal" ng-controller="ExpertSignupModalCtrl">
+    <div class="ui icon header">
+        <div>
+            <img class="ui image center-block modal-icon" src="../images/Connector-Logo-White.png">
+        </div>
+        <div class="margin-top-30 font-weight-300 font-spacing-1 font-size-1by2em margin-bottom-30">
+            Register with us as an Expert
+        </div>
+    </div>
+    <div class="ui form">
+        <div class="content">
+            <div class="ui two column stackable grid">
+                <div class="eight wide column">
+                    <div class="ui grid">
+                        <div class="six wide column">
+                            <label class="signup-label" for="title">Title:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled right action input" ng-show="settingUp">
+                                <input type="text" placeholder="Title" id="title" class="profile-title" ng-model="title" readonly>
+                                <div class="ui floating dropdown button title-dropdown">
+                                    <div class="text">Title</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu">
+                                        <div class="item" ng-click="title='Mr.'">Mr.</div>
+                                        <div class="item" ng-click="title='Mrs.'">Mrs.</div>
+                                        <div class="item" ng-click="title='Miss.'">Miss.</div>
+                                    </div>
+                                </div>
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{title}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="firstname">First Name:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="First Name" ng-model="firstname" id="firstname">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{firstname}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="lastname">Last Name:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Last Name" ng-model="lastname" id="lastname">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{lastname}}
+                            </div>
+                        </div>
+
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="email">Email:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="email" placeholder="E-Mail" ng-model="email" id="email">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{email}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="confirmEmail">Confirm Email:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="email" placeholder="Confirm E-Mail" ng-model="confirmEmail" id="confirmEmail">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{confirmEmail}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="dob">Date of Birth:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui calendar" id="datepicker-expert">
+                                <div class="ui right icon input profile-input" ng-show="settingUp">
+                                    <i class="calendar icon"></i>
+                                    <input type="text" placeholder="Date of Birth" id="dob">
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{dob}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="companyName">Company Name:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Company Name" ng-model="companyName" id="companyName">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{companyName}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="companyVAT">Company VAT:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Company VAT" ng-model="companyVAT" id="companyVAT">
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{companyVAT}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="companyCountry">Company Country:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui search enter-country">
+                                <div class="ui left corner labeled right icon input profile-input" ng-show="settingUp">
+                                    <input class="prompt enter-country-input" type="text" placeholder="Company Country" ng-model="companyCountry" id="companyCountry">
+                                    <div class="ui left corner label">
+                                        <i class="asterisk icon orange"></i>
+                                    </div>
+                                    <i class="search icon"></i>
+                                </div>
+                                <div class="profile-input signup-label" ng-show="!settingUp">
+                                    {{companyCountry}}
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="city">City:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="City" ng-model="city" id="city">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{city}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="address">Address:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Address" ng-model="address" id="address">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{address}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="postalCode">Postal Code:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Postal Code" ng-model="postalCode" id="postalCode">
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{postalCode}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="phone">Phone:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui left corner labeled input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Phone" ng-model="phone" id="phone">
+                                <div class="ui left corner label">
+                                    <i class="asterisk icon orange"></i>
+                                </div>
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{phone}}
+                            </div>
+                        </div>
+
+                        <div class="six wide column">
+                            <label class="signup-label" for="mobile">Mobile:</label>
+                        </div>
+                        <div class="ten wide column">
+                            <div class="ui input profile-input" ng-show="settingUp">
+                                <input type="text" placeholder="Mobile" ng-model="mobile" id="mobile">
+                            </div>
+                            <div class="profile-input signup-label" ng-show="!settingUp">
+                                {{mobile}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="four wide column center aligned">
+                    <div class="ui item">
+                        Speciality
+                    </div>
+
+                    <div class="ui segment combo-box color-topic" ng-show="settingUp">
+                        <div ng-if="selectedSpeciality.length==0">
+                            Speciality List
+                        </div>
+                        <div class="ui label label-border" ng-repeat="speciality in selectedSpeciality">
+                            {{speciality}}
+                            <i class="delete icon" ng-click="removeSpeciality(speciality)"></i>
+                        </div>
+                    </div>
+
+                    <div class="ui segment color-topic combo-box-confirmation" ng-show="!settingUp">
+                        <div ng-if="selectedSpeciality.length==0">
+                            Speciality List
+                        </div>
+                        <div class="ui label label-border" ng-repeat="speciality in selectedSpeciality">
+                            {{speciality}}
+                        </div>
+                    </div>
+                    <div class="phase-out" ng-show="settingUp">
+                        <select class="ui fluid dropdown margin-top-20" ng-model="speciality" ng-change="selectSpeciality(speciality)">
+                            <option value="">Speciality</option>
+                            <option value="Car Policy Design and Review">Car Policy Design and Review</option>
+                            <option value="Lease versus Buy versus Cash Allowance">Lease versus Buy versus Cash Allowance</option>
+                            <option value="Telematics and Risk Management">Telematics and Risk Management</option>
+                            <option value="Powertrains">Powertrains</option>
+                            <option value="Company Car to Mobility transition">Company Car to Mobility transition</option>
+                            <option value="Tendering">Tendering</option>
+                            <option value="Contract Negotiations, SLA and KPI service">Contract Negotiations, SLA and KPI service</option>
+                            <option value="Supply Chain assessments">Supply Chain assessments</option>
+                            <option value="Supplier integration">Supplier integration</option>
+                            <option value="Savings programs">Savings programs</option>
+                            <option value="Communication Strategy">Communication Strategy</option>
+                            <option value="Change and Project Management">Change and Project Management</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="four wide column center aligned">
+                    <div class="ui item">
+                        Country
+                    </div>
+                    <div class="ui segment combo-box color-topic" ng-show="settingUp">
+                        <div ng-if="selectedCountries.length==0">
+                            Country List
+                        </div>
+                        <div class="ui label label-border" ng-repeat="country in selectedCountries">
+                            <img src="{{country.image}}">
+                            {{country.title}}
+                            <i class="delete icon" ng-click="removeCountry(country)"></i>
+                        </div>
+                    </div>
+
+                    <div class="ui segment combo-box-confirmation color-topic" ng-show="!settingUp">
+                        <div ng-if="selectedCountries.length==0">
+                            Country List
+                        </div>
+                        <div class="ui basic image label label-border" ng-repeat="country in selectedCountries">
+                            <img src="{{country.image}}">
+                            {{country.title}}
+                        </div>
+                    </div>
+
+                    <div class="ui search country-list margin-top-20 phase-out" ng-show="settingUp">
+                        <div class="ui icon input">
+                            <input class="prompt country-list-input" type="text" placeholder="Search Country...">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="margin-top-20"></div>
+        <div class="ui inline cookie error nag" ng-show="submitAttempt">
+        <span class="title">
+        {{message}}
+        </span>
+            <i class="close icon"></i>
+        </div>
+
+
+        <div class="float-right margin-bottom-100">
+            <div class="actions">
+                <button class="ui cancel button header-button cancel-button" ng-show="settingUp">
+                    <i class="remove icon"></i>
+                    Cancel
+                </button>
+                <button class="ui button header-button cancel-button" ng-show="!settingUp" ng-click="edit()">
+                    <i class="remove icon"></i>
+                    Edit
+                </button>
+                <button class="ui green button header-button font-weight-300 login-button" ng-class="{'loading': processStarted}" ng-click="setUp()" ng-show="settingUp">
+                    <i class="add user icon"></i>
+                    Set Up Application
+                </button>
+                <button class="ui green button header-button font-weight-300 login-button" ng-class="{'loading': processStarted}" ng-click="signUp()" ng-show="!settingUp">
+                    <i class="add user icon"></i>
+                    Submit
+                </button>
+            </div>
+        </div>
+
+        <div class="signup-bottom"></div>
+    </div>
+</div>
+
+<script>
+    $('.ui.fluid.dropdown')
+            .dropdown()
+    ;
+</script>

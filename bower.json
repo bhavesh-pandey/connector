@@ -1,0 +1,25 @@
+{
+  "name": "connector",
+  "main": "bin/www",
+  "authors": [
+    "Bhavesh Pandey <pandey2992@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "jquery": "^3.1.1",
+    "angular-ui-router": "^0.4.2",
+    "angular-animate": "^1.6.1",
+    "semantic-ui-calendar": "^0.0.8",
+    "ng-file-upload": "^12.2.13"
+  }
+}

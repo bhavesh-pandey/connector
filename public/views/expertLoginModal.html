@@ -1,0 +1,49 @@
+<div class="ui basic modal expert-login-modal" ng-controller="ExpertLoginModalCtrl">
+    <div class="ui icon header">
+        <div>
+            <img class="ui image center-block modal-icon" src="../images/Connector-Logo-White.png">
+        </div>
+        <div class="margin-top-30 font-weight-300 font-spacing-1 font-size-1by2em">
+            Login to your Expert account
+        </div>
+    </div>
+    <form>
+        <div class="content">
+            <div class="ui inverted segment max-width-400 center-block">
+                <div class="ui inverted transparent left icon input width-100p">
+                    <i class="user icon"></i>
+                    <input type="text" placeholder="User Name" ng-model="username">
+                </div>
+            </div>
+            <div class="ui inverted segment max-width-400 center-block">
+                <div class="ui inverted transparent left icon input width-100p">
+                    <i class="lock icon"></i>
+                    <input type="password" placeholder="Password" ng-model="password">
+                </div>
+            </div>
+        </div>
+        <div class="margin-top-20"></div>
+        <div class="ui inline cookie error nag" ng-show="submitAttempt">
+                <span class="title">
+                {{message}}
+                </span>
+            <i class="close icon"></i>
+        </div>
+        <div class="float-left line-height-60">
+            <a href="#" class="forgot-password" ng-click="forgotPassword()">Forgot User Name / Password</a>
+        </div>
+
+        <div class="float-right">
+            <div class="actions">
+                <div class="ui cancel button header-button cancel-button">
+                    <i class="remove icon"></i>
+                    Cancel
+                </div>
+                <button type="submit" class="ui green button header-button font-weight-300 login-button" ng-click="logIn()" ng-class="{'loading': processStarted}">
+                    <i class="sign in icon"></i>
+                    Login
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

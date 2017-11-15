@@ -1,0 +1,48 @@
+<div class="ui container">
+    <div class="ui two column stackable grid">
+        <div class="sixteen wide column margin-top-30">
+            <div class="font-weight-100 font-size-3em line-height-2em text-center">
+                Want to Talk
+            </div>
+        </div>
+        <div class="row margin-top-50">
+            <a class="four wide column" href="mailto:connector@connector.expert">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Mail-Icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Contact through E-mail
+                    </div>
+                </div>
+                <div class="animation-card-talk center-block"></div>
+            </a>
+            <div class="two wide column"></div>
+            <a class="four wide column" href="" ng-click="skype_chat()">
+                <iframe style="display:none;" id="chatexpertframe"></iframe>
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Chat-Icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Start to Chat
+                    </div>
+                </div>
+                <div class="animation-card-talk center-block"></div>
+            </a>
+            <div class="two wide column"></div>
+            <a class="four wide column" href="" ng-click="skype_call()">
+                <iframe style="display:none;" id="callexpertframe"></iframe>
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Skype-Icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Start to Talk
+                    </div>
+                </div>
+                <div class="animation-card-talk center-block"></div>
+            </a>
+        </div>
+
+        <div class="sixteen wide column center aligned margin-top-30">
+            <div class="ui button profile-update-button cancel-button" tabindex="0" ng-click="back()">
+                Back
+            </div>
+        </div>
+    </div>
+</div>

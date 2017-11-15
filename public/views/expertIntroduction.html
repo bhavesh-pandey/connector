@@ -1,0 +1,144 @@
+<div class="ui fluid container page-top experts-intro-background">
+    <div class="page-top-overlay">
+
+    </div>
+</div>
+
+<div class="ui container">
+    <div class="ui grid">
+        <div class="seven wide column">
+            <div class="row">
+                <div class="partners-topic color-white font-weight-100 font-size-3em font-spacing-1 line-height-2em">
+                    Experts network
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-justify color-white source-sans font-weight-300 font-spacing-1 font-size-18 line-height-18">
+                    Join our Expert's panel
+                </div>
+            </div>
+            <div class="row">
+                <button class="ui product-button green button login-button" ng-click="expertSignup()">
+                    Apply to become Expert
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui container" id="scrollToThis">
+    <div class="ui two column stackable grid">
+
+        <div class="sixteen wide column color-topic-light text-center font-size-48 font-spacing-1 margin-top-50 font-weight-200 line-height-60">
+            Become a New Expert
+        </div>
+
+        <div class="row">
+            <div class="sixteen wide column text-center roboto font-weight-300 font-spacing-1 font-size-14 margin-top-30 margin-bottom-50">
+                <p>Thank you for registering as an expert into the Expert Lounge! Below you will find the useful information you need to finalise your membership
+                </p>
+            </div>
+        </div>
+
+        <div class="row margin-top-30">
+            <div class="eight wide column">
+                <img class="ui image expert-intro-icon center-block" src="../images/Pioneer-ICON.png">
+                <div class="text-center roboto font-size-2em margin-top-50">
+                    Pioneers
+                </div>
+                <div class="ui grid">
+                    <div class="two wide column"></div>
+                    <div class="twelve wide column">
+                        <div class="margin-top-30 text-justify">
+                            You who want to go the extra mile for Connector. You benefit from preferential rates, have a seat at the table in strategic meetings and co-decide about expansion of the Expert Community, marketing and communication events. In exchange, you will actively represent Connector in events and interviews and take part in the lead generation stream. You will also be profiled on the Connector website. There are a limited number of Pioneer Statuses available per region, exception made for Pioneers with a specific and exceptional area of expertise and Pioneers with an exceptional reputation on the market.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eight wide column">
+                <img class="ui image expert-intro-icon center-block" src="../images/Expert-ICON.png">
+                <div class="text-center roboto font-size-2em margin-top-50">
+                    Experts
+                </div>
+                <div class="ui grid">
+                    <div class="two wide column"></div>
+                    <div class="twelve wide column">
+                        <div class="margin-top-30 text-justify">
+                            The core of Connector. Your location and your area of expertise are key factors in your role within the Connector Community. You are a Fleet Expert who is keen on being updated about what’s happening in the Fleet world, you want to extend your customer base and you see the benefits of being part of a global network.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui divider"></div>
+
+        <div class="sixteen wide column text-center">
+            If you would like to know more detail, Please contact to  Connector team. We will explain you the different modalitities and advantages of each membership
+        </div>
+
+        <div class="sixteen wide column">
+            <div class="ui segment">
+                <div class="margin-top-20"></div>
+                <div class="ui grid">
+                    <div class="three wide column line-height-38 text-center">
+                        Name:
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui input profile-input">
+                            <input type="text" ng-model="name">
+                        </div>
+                    </div>
+
+                    <div class="three wide column line-height-38 text-center">
+                        E-mail:
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui input profile-input">
+                            <input type="email" ng-model="email">
+                        </div>
+                    </div>
+
+                    <div class="three wide column line-height-38 text-center">
+                        Inquiry:
+                    </div>
+                    <div class="thirteen wide column">
+                        <div class="ui form">
+                            <div class="field">
+                                <textarea ng-model="comments"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui inline cookie error nag" ng-show="submitAttempt">
+                        <span class="title">
+                        {{message}}
+                        </span>
+                        <i class="close icon"></i>
+                    </div>
+
+                    <div class="sixteen wide column">
+                        <div class="float-right">
+                            <button class="ui green button header-button font-weight-200 login-button" ng-class="{'loading': processStarted}" ng-click="send()">
+                                <i class="mail icon"></i>
+                                Send a Mail
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixteen wide column text-center margin-top-50">
+            Please apply to become a member of Connector
+        </div>
+        <div class="sixteen wide column center aligned">
+            <button class="ui green button header-button font-weight-200 login-button" ng-class="{'loading': processStarted}" ng-click="expertSignup()">
+                <i class="add user icon"></i>
+                Apply to become an Expert
+            </button>
+        </div>
+
+    </div>
+</div>

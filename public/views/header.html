@@ -1,0 +1,50 @@
+<div class="ui inverted borderless secondary pointing stackable menu main-header">
+    <div class="offset-item"></div>
+    <a class="item" href="https://www.connector.expert">
+        <img class="connector-logo-header" src="../images/connector-logo-black.png">
+    </a>
+    <!--<a class="right item black-bottom text-center" ui-sref="app.about" ng-class="{'active': $root.selectedMenu==2}">
+        <span class="header-options source-sans font-size-16">
+        About
+        </span>
+    </a>
+    <a class="item black-bottom" ui-sref="app.partners" ng-class="{'active': $root.selectedMenu==4}">
+        <span class="header-options source-sans font-size-16">
+        Partners
+        </span>
+    </a>
+    <a class="item black-bottom" ui-sref="app.products" ng-class="{'active': $root.selectedMenu==3}">
+        <span class="header-options source-sans font-size-16">
+        Our products & services
+        </span>
+    </a>
+    <a class="item black-bottom" ui-sref="app.howitworks" ng-class="{'active': $root.selectedMenu==5}">
+        <span class="header-options source-sans font-size-16">
+        How does it work?
+        </span>
+    </a>
+    <a class="item black-bottom" ui-sref="app.experts" ng-class="{'active': $root.selectedMenu==6}">
+        <span class="header-options source-sans font-size-16">
+        Who are our experts
+        </span>
+    </a>-->
+    <a class="right item">
+
+    </a>
+    <div class="ui label header-avatar" ng-mouseover="showDropdown()" ng-show="$root.user">
+        <img class="ui right spaced avatar image header-avatar-image" src="{{$root.profilePictureLink}}">
+        <span>{{$root.user.firstname}}</span>
+        <div class="ui floating dropdown" id="user-dropdown">
+            <i class="dropdown icon"></i>
+            <div class="menu user-dropdown-menu">
+                <div class="item" ng-click="gotoCustomerLounge()" ng-show="$root.user.role=='user'">Customer Lounge</div>
+                <div class="item" ng-click="gotoExpertLounge()" ng-show="$root.user.role=='expert'">Expert Lounge</div>
+                <div class="item" ng-click="gotoManagementConsole()" ng-show="$root.user.isAdmin">Management Console</div>
+            </div>
+        </div>
+    </div>
+    <div class="ui button header-button" tabindex="0" ng-click="logout()" ng-show="$root.user" ng-class="$root.user.role=='expert'?'green to-orange':'orange to-green'">
+        <div class="visible content font-weight-300">Logout</div>
+    </div>
+    <div class="offset-item"></div>
+</div>

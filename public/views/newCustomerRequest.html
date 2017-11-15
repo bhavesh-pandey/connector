@@ -1,0 +1,254 @@
+<div class="ui container">
+    <div class="ui two column stackable grid">
+        <div class="sixteen wide column margin-top-30">
+            <div class="font-weight-100 font-size-3em text-center line-height-2em">
+                New Request
+            </div>
+        </div>
+        <div class="eight wide column margin-top-50">
+            <div class="ui grid">
+                <div class="sixteen wide column text-center">
+                    Please select the type of request
+                </div>
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[1]}" ng-click="toggleSelection(1)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[1]" ng-click="toggleSelection(1)">
+                            <label>{{$root.siteData.products.content.ProductOneHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductOneDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[2]}" ng-click="toggleSelection(2)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[2]" ng-click="toggleSelection(2)">
+                            <label>{{$root.siteData.products.content.ProductTwoHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductTwoDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[3]}" ng-click="toggleSelection(3)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[3]" ng-click="toggleSelection(3)">
+                            <label>{{$root.siteData.products.content.ProductThreeHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductThreeDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[4]}" ng-click="toggleSelection(4)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[4]" ng-click="toggleSelection(4)">
+                            <label>{{$root.siteData.products.content.ProductFourHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductFourDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[5]}" ng-click="toggleSelection(5)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[5]" ng-click="toggleSelection(5)">
+                            <label>{{$root.siteData.products.content.ProductFiveHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductFiveDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[6]}" ng-click="toggleSelection(6)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[6]" ng-click="toggleSelection(6)">
+                            <label>{{$root.siteData.products.content.ProductSixHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductSixDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[7]}" ng-click="toggleSelection(7)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[7]" ng-click="toggleSelection(7)">
+                            <label>{{$root.siteData.products.content.ProductSevenHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductSevenDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[8]}" ng-click="toggleSelection(8)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[8]" ng-click="toggleSelection(8)">
+                            <label>{{$root.siteData.products.content.ProductEightHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductEightDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[9]}" ng-click="toggleSelection(9)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[9]" ng-click="toggleSelection(9)">
+                            <label>{{$root.siteData.products.content.ProductNineHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductNineDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[10]}" ng-click="toggleSelection(10)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[10]" ng-click="toggleSelection(10)">
+                            <label>{{$root.siteData.products.content.ProductTenHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductTenDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[11]}" ng-click="toggleSelection(11)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[11]" ng-click="toggleSelection(11)">
+                            <label>{{$root.siteData.products.content.ProductElevenHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductElevenDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+
+                <div class="center-block">
+                    <div class="new-request-selector float-left background-color-grey1C" ng-class="{'new-request-hover': services[12]}" ng-click="toggleSelection(12)">
+                        <div class="ui checkbox">
+                            <input type="checkbox" ng-model="services[12]" ng-click="toggleSelection(12)">
+                            <label>{{$root.siteData.products.content.ProductTwelveHeading.data}}</label>
+                        </div>
+                    </div>
+                    <div class="circular ui icon button float-left new-request-info" data-content="{{$root.siteData.products.content.ProductTwelveDescription.data}}" data-position="right center" data-variation="wide inverted">
+                        <i class="icon question"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="eight wide column margin-top-50">
+            <div class="ui grid">
+                <div class="sixteen wide column text-center">
+                    Please select the location where our experts can help you
+                </div>
+
+                <div class="sixteen wide column">
+                    Region
+                </div>
+
+                <div class="sixteen wide column">
+                    <select class="ui fluid dropdown" ng-model="selectedRegion" ng-change="selectRegion()">
+                        <option value="">Region</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Americas">Americas</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+
+                <div class="sixteen wide column">
+                    Country(s)
+                </div>
+
+                <div class="sixteen wide column">
+                    <div class="ui search search-country">
+                        <div class="ui icon input">
+                            <input class="prompt search-country-input" type="text" placeholder="Search Country...">
+                            <i class="search icon"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sixteen wide column">
+                    <div class="ui segment">
+                        <div ng-if="selectedCountries.length==0">
+                            No Country Selected
+                        </div>
+                        <div class="ui label" ng-repeat="country in selectedCountries">
+                            <img src="{{country.image}}">
+                            {{country.title}}
+                            <i class="delete icon" ng-click="removeCountry(country)"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sixteen wide column margin-top-30">
+            Comments
+        </div>
+        <div class="sixteen wide column">
+            <div class="ui form">
+                <div class="field">
+                    <textarea ng-model="comments"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inline cookie error nag" ng-show="submitAttempt">
+        <span class="title">
+        {{message}}
+        </span>
+            <i class="close icon"></i>
+        </div>
+
+        <div class="sixteen wide column center aligned">
+            <div class="ui button profile-update-button cancel-button" tabindex="0" ng-click="cancelRequest()">
+                Cancel
+            </div>
+            <div class="ui green button profile-update-button login-button" tabindex="0" ng-click="placeRequest()">
+                <div class="font-weight-200">Set the Request</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $('.ui.fluid.dropdown')
+            .dropdown()
+    ;
+</script>

@@ -1,0 +1,73 @@
+<div class="ui container">
+    <div class="ui two column stackable grid">
+        <div class="sixteen wide column margin-top-30">
+            <div class="font-weight-100 font-size-3em text-center line-height-2em">
+                New Request Confirmation
+            </div>
+        </div>
+        <div class="eight wide column margin-top-50">
+            <div class="ui grid">
+                <div class="sixteen wide column text-center">
+                    Selected services
+                </div>
+                <div class="new-request-selector color-white center-block background-color-orange text-center" ng-repeat="service in addedServiceText">
+                    {{service}}
+                </div>
+            </div>
+        </div>
+
+        <div class="eight wide column margin-top-50">
+            <div class="ui grid">
+                <div class="sixteen wide column text-center">
+                    Selected location
+                </div>
+
+                <div class="eight wide column text-center">
+                    Region:
+                </div>
+                <div class="eight wide column text-center">
+                    {{selectedRegion}}
+                </div>
+
+                <div class="eight wide column text-center">
+                    Country(s):
+                </div>
+
+                <div class="eight wide column text-center">
+                    <div ng-if="selectedCountries.length==0">
+                        No Country Selected
+                    </div>
+                    <div class="ui basic image label" ng-repeat="country in selectedCountries">
+                        <img src="{{country.image}}">
+                        {{country.title}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="two wide column margin-top-30" ng-if="comments">
+            <div class="height-100p width-100p vertical-center">
+                Comments:
+            </div>
+        </div>
+
+        <div class="fourteen wide column margin-top-30" ng-if="comments">
+            <div class="ui segment">
+                {{comments}}
+            </div>
+        </div>
+
+        <div class="sixteen wide column center aligned margin-top-30">
+            If the information you enter is correct, Please click "Submit" bottom
+        </div>
+
+        <div class="sixteen wide column center aligned">
+            <div class="ui button profile-update-button cancel-button" tabindex="0" ng-click="back()">
+                Edit
+            </div>
+            <div class="ui green button profile-update-button login-button" tabindex="0" ng-click="confirm()" ng-class="{'loading': processStarted}">
+                <div class="font-weight-200">Submit</div>
+            </div>
+        </div>
+    </div>
+</div>

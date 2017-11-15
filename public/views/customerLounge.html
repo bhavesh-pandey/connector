@@ -1,0 +1,66 @@
+<div class="ui container">
+    <div class="ui two column stackable grid">
+        <div class="sixteen wide column margin-top-30">
+            <div class="font-weight-100 font-size-3em line-height-2em text-center">
+                Welcome to your Customer Lounge {{$root.user.title}} {{$root.user.lastname}}
+            </div>
+
+            <div class="font-weight-300 font-size-18 text-center">
+                What would you like to do today?
+            </div>
+        </div>
+        <div class="row margin-top-30">
+            <a class="four wide column" href="" ng-click="wantToTalk()">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Talk-with-Icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        I want to talk
+                    </div>
+                </div>
+                <div class="animation-card center-block"></div>
+            </a>
+            <div class="two wide column"></div>
+            <a class="four wide column" href="" ng-click="enterNewRequest()">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/enter-New-Request.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Enter a new request
+                    </div>
+                </div>
+                <div class="animation-card center-block"></div>
+            </a>
+            <div class="two wide column"></div>
+            <a class="four wide column" href="https://login.microsoftonline.com/" target="_blank">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Share-Point-icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Access my personal Sharepoint
+                    </div>
+                </div>
+                <div class="animation-card center-block"></div>
+            </a>
+        </div>
+        <div class="row margin-top-30">
+            <div class="three wide column"></div>
+            <a class="four wide column" href="https://www.connector.expert/blog">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Article-ICON.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Articles
+                    </div>
+                </div>
+                <div class="animation-card center-block"></div>
+            </a>
+            <div class="two wide column"></div>
+            <a class="four wide column" href="" ng-click="editProfile()">
+                <div class="lounge-card white-grey-background center-block">
+                    <img class="ui image height-100 center-block margin-top-10p" src="../images/Edit-Profile-Icon.png">
+                    <div class="text-center margin-top-20 color-topic-light font-size-16">
+                        Edit my Profile
+                    </div>
+                </div>
+                <div class="animation-card center-block"></div>
+            </a>
+        </div>
+    </div>
+</div>

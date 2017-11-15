@@ -1,0 +1,70 @@
+<div class="ui fluid container page-top">
+    <div class="page-top-overlay">
+        <img class="top-image" src="../images/{{$root.siteData.experts.content.CoverPic.data}}">
+    </div>
+</div>
+
+<div class="ui container">
+    <div class="ui grid">
+        <div class="seven wide column">
+            <div class="row">
+                <div class="partners-topic color-white font-weight-100 font-size-3em font-spacing-1 line-height-1em">
+                    {{$root.siteData.experts.content.CoverHeading.data}}
+                </div>
+            </div>
+            <div class="row margin-top-20">
+                <div class="text-justify color-white source-sans font-weight-300 font-spacing-1 font-size-18 line-height-18">
+                    {{$root.siteData.experts.content.CoverSubHeading.data}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui fluid container">
+    <div class="ui two column stackable grid">
+
+        <div class="sixteen wide column color-topic-light text-center font-size-48 font-spacing-1 margin-top-50 font-weight-200 line-height-60 margin-bottom-50">
+            {{$root.siteData.experts.content.Heading.data}}
+        </div>
+
+        <div class="row expert-row-odd">
+            <div class="two wide column"></div>
+            <div class="seven wide column roboto font-weight-300 font-spacing-1 font-size-14 text-justify">
+                <div class="vertical-center height-odd-row">
+                    {{$root.siteData.experts.content.SectionOneParaOne.data}}<br><br>
+                    {{$root.siteData.experts.content.SectionOneParaTwo.data}}
+                </div>
+
+            </div>
+            <div class="one wide column"></div>
+            <div class="four wide column">
+                <img class="ui image max-width-300 center-block" src="../images/{{$root.siteData.experts.content.SectionOnePic.data}}">
+            </div>
+            <div class="two wide column"></div>
+        </div>
+        <div class="row expert-row-even">
+            <div class="two wide column"></div>
+            <div class="four wide column">
+                <img class="ui image margin-top-20 margin-bottom-20 max-width-300 center-block" src="../images/{{$root.siteData.experts.content.SectionTwoPic.data}}">
+            </div>
+            <div class="one wide column"></div>
+            <div class="seven wide column roboto font-weight-300 font-spacing-1 font-size-14 text-justify">
+                <div class="vertical-center height-even-row">
+                    {{$root.siteData.experts.content.SectionTwoParaOne.data}}<br><br>
+                    {{$root.siteData.experts.content.SectionTwoParaTwo.data}}
+                </div>
+            </div>
+            <div class="two wide column"></div>
+        </div>
+
+        <div class="row margin-top-50">
+            <div class="three wide column"></div>
+            <div class="ten wide column text-justify roboto font-weight-300 font-spacing-1 font-size-14 margin-top-30 margin-bottom-50">
+                <p>{{$root.siteData.experts.content.BottomDescriptionParaOne.data}}</p>
+                <p>{{$root.siteData.experts.content.BottomDescriptionParaTwo.data}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>
